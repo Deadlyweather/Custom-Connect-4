@@ -1,2 +1,1 @@
-Pelin nimi?
-Custom Connect 4?
+Custom Connect 4
