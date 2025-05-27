@@ -3,3 +3,5 @@ class Settings:
         self.leveys = leveys
         self.korkeus = korkeus
         self.määrä = määrä
+    def __str__(self):
+        return f"Leveys: {self.leveys}, Korkeus: {self.korkeus}, Määrä: {self.määrä}"
