@@ -6,4 +6,4 @@ class Settings:
         self.korkeus = korkeus
     def voiton_ehto(self, määrä):
         self.määrä = määrä
-    
+    #Tämä on olemassa koska pelin nimi on Custom
