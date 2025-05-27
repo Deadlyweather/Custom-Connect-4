@@ -1,5 +1,5 @@
 import Settings
-print("Settings:")
+print("Settings: ")
 while True:
     Valinnat = Settings.Settings(input("Anna leveys: "), input("Anna korkeus: "), input("Anna määrä: "))
     print(Valinnat)
