@@ -1,9 +1,5 @@
 class Settings:
-    def __init__(self):
-        self.settings = {}
-    def lauta(self, leveys, korkeus):
+    def __init__(self, leveys=8, korkeus=8, määrä=4):
         self.leveys = leveys
         self.korkeus = korkeus
-    def voiton_ehto(self, määrä):
         self.määrä = määrä
-    #Tämä on olemassa koska pelin nimi on Custom
