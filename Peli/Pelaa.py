@@ -1,7 +1,7 @@
 import Settings
 print("Settings: ")
 while True:
-    Valinnat = Settings.Settings(input("Anna leveys: "), input("Anna korkeus: "), input("Anna määrä: "))
+    Valinnat = Settings.Settings(int(input("Anna leveys: "))), int(input("Anna korkeus: ")), int(input("Anna määrä: "))
     print(Valinnat)
     if input("Oletko tyytyväinen valintoihisi?: ").lower() == 'kyllä':
         break
