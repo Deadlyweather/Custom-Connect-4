@@ -1,10 +1,16 @@
-import Settings
-print("Settings: ")
-while True:
-    Valinnat = Settings.Settings(int(input("Anna leveys: "))), int(input("Anna korkeus: ")), int(input("Anna määrä: "))
-    print(Valinnat)
-    if input("Oletko tyytyväinen valintoihisi?: ").lower() == 'kyllä':
-        break
+def kysy_asetukset():
+    print("Settings: ")
+    while True:
+        try:
+            leveys = int(input("Anna leveys: "))
+            korkeus = int(input("Anna korkeus: "))
+            maara = int(input("Montako peräkkäin voittaa?: "))
+        except ValueError:
+            print("Syötä kokonaisluku!")
+            continue
+        if input("Oletko tyytyväinen valintoihisi? (k/e): ").lower() == 'k':
+            break
+    return leveys, korkeus, maara
 print("Aloitetaan peli...")
 with open("Peli/Settings.py", "w") as reset:
     pass
