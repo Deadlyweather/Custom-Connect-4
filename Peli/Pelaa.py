@@ -14,7 +14,7 @@ def kysy_asetukset():
 
 leveys, korkeus, määrä = kysy_asetukset()
 print("Aloitetaan peli...")
-with open("Peli/Settings.py", "w") as reset:
+with open("Peli/Lauta", "w") as reset:
     pass
 with open("Peli/Lauta","a") as Lauta:
     for X in range(leveys):
@@ -23,8 +23,11 @@ with open("Peli/Lauta","a") as Lauta:
         Lauta.write("\n")
 print("Lauta on luotu.")
 with open("Peli/Lauta") as Lauta:
+    pelilauta = []
     for rivi in Lauta:
         print(rivi.strip())
+        pelilauta.append(rivi)
 while True:
     print("pelaaja 1")
     kohde = int(input(f"Pudota (1-{leveys})"))
+    
