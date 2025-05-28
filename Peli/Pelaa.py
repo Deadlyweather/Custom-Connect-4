@@ -12,7 +12,7 @@ def kysy_asetukset():
             break
     return leveys, korkeus, määrä
 
-leveys, korkeus, maara = kysy_asetukset()
+leveys, korkeus, määrä = kysy_asetukset()
 print("Aloitetaan peli...")
 with open("Peli/Settings.py", "w") as reset:
     pass
