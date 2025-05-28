@@ -4,7 +4,7 @@ def kysy_asetukset():
         try:
             leveys = int(input("Anna leveys: "))
             korkeus = int(input("Anna korkeus: "))
-            maara = int(input("Anna määrä: "))
+            määrä = int(input("Anna määrä: "))
         except ValueError:
             print("Syötä kokonaisluku!")
             continue
