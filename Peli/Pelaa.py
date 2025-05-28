@@ -25,3 +25,6 @@ print("Lauta on luotu.")
 with open("Peli/Lauta") as Lauta:
     for rivi in Lauta:
         print(rivi.strip())
+while True:
+    print("pelaaja 1")
+    kohde = int(input(f"Pudota (1-{leveys})"))
