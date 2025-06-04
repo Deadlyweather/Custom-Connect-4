@@ -28,14 +28,24 @@ with open("Peli/Lauta") as Lauta:
         print(rivi.strip())
         pelilauta.append(rivi)
 while True:
-    print("pelaaja 1")
-    try:
-        kohde = int(input(f"Pudota (1-{leveys})"))
-        if kohde < 1 or kohde > leveys:
-            print(f"Syötä luku välillä 1 ja {leveys}")
-        else:
+    print("Pelaaja 1 (X)")
+    while True:
+        try:
+            kohde = int(input(f"Pudota (1-{leveys}): "))
+            if kohde < 1 or kohde > leveys:
+                print(f"Syötä luku välillä 1 ja {leveys}")
+                continue
             break
-    except ValueError:
-        print(f"Syötä kokonaisluku välillä 1 ja {leveys}")
-        continue
-    
+        except ValueError:
+            print(f"Syötä kokonaisluku välillä 1 ja {leveys}")
+    print("Pelaaja 2 (O)")
+    while True:
+        try:
+            kohde2 = int(input(f"Pudota (1-{leveys}): "))
+            if kohde2 < 1 or kohde2 > leveys:
+                print(f"Syötä luku välillä 1 ja {leveys}")
+                continue
+            break
+        except ValueError:
+            print(f"Syötä kokonaisluku välillä 1 ja {leveys}")
+
