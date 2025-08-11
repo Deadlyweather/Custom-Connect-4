@@ -8,6 +8,9 @@ def kysy_asetukset():
         except ValueError:
             print("Syötä kokonaisluku!")
             continue
+        if määrä > leveys or määrä > korkeus:
+            print("Määrä ei voi olla suurempi kuin leveys tai korkeus!")
+            continue
         if input("Oletko tyytyväinen valintoihisi? (k/e): ").lower() == 'k':
             break
     return leveys, korkeus, määrä
