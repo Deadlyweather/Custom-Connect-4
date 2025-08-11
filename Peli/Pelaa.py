@@ -17,7 +17,7 @@ print("Aloitetaan peli...")
 
 with open("Peli/Lauta", "w") as Lauta:
     for _ in range(korkeus):
-        Lauta.write("#" * leveys + "\n")
+        Lauta.write("." * leveys + "\n")
 
 print("Lauta on luotu.")
 
