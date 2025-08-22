@@ -18,13 +18,13 @@ def kysy_asetukset():
 leveys, korkeus, määrä = kysy_asetukset()
 print("Aloitetaan peli...")
 
-with open("Peli/Lauta", "w") as Lauta:
+with open("Lauta", "w") as Lauta:
     for _ in range(korkeus):
         Lauta.write("." * leveys + "\n")
 
 print("Lauta on luotu.")
 
-with open("Peli/Lauta") as Lauta:
+with open("Lauta") as Lauta:
     pelilauta = [list(rivi.strip()) for rivi in Lauta]
 
 def tulosta_pelilauta():
